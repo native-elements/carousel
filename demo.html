@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>native-elements-carousel demo</title>
+
+    <style>
+        .jumbotron {
+            margin-bottom: 0;
+        }
+        #carousel {
+            position: relative;
+        }
+        .jumbPoints {
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            bottom: 10px;
+            width: 100%;
+        }
+        .jumbPoints b {
+            background: #ccc;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            margin: 0 3px;
+            border-radius: 8px;
+        }
+        .jumbPoints b:hover {
+            background: #989;
+        }
+        .jumbPoints b.active {
+            background: #606;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="carousel">
+        <div class="jumbotron">
+            <div class="container">
+            <h1 class="display-3">Slide 1!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+            <h1 class="display-3">Slide 2!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+            <h1 class="display-3">Slide 3!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/native-elements-carousel.min.js"></script>
+    <script>
+        NECarousel(document.getElementById('carousel'), {
+            itemClass: 'jumbotron',
+            pointsClass: 'jumbPoints',
+        })
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

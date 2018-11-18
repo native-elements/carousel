@@ -1,0 +1,6 @@
+dist/native-elements-carousel.min.js
+src
+tsconfig.json
+webpack.config.js
+webpack.prod.js
+demo.html
