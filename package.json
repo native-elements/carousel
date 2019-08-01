@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "node_modules/.bin/tsc ; node_modules/.bin/webpack --config webpack.prod.js",
-    "watch": "node_modules/.bin/webpack -w",
+    "build": "tsc ; node_modules/.bin/webpack --config webpack.prod.js",
+    "watch": "tsc -w",
+    "watch-webpack": "node_modules/.bin/webpack",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "author": "Valery Shibanov",
@@ -17,10 +18,6 @@
     "webpack-merge": "^4.1.4"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.2",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-preset-env": "^1.7.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }
